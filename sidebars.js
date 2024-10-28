@@ -81,8 +81,7 @@ const sidebars = {
       type: "category",
       label: "UniFi Based Rollup",
       link: {
-        type: "doc",
-        id: "developers/rollup/index",
+        type: "generated-index",
       },
       items:[
         {

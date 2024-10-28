@@ -67,7 +67,7 @@ Optionally, you can verify your contract on the network. This makes the source c
 To deploy and verify a contract in a single command, run:
 
 ```bash
-forge create --rpc-url <rpc_https_endpoint> --private-key <your_private_key> src/Contract.sol:SimpleStorage --verify --verifier blockscout --verifier-url <blockscout_homepage_explorer_url>/api? 
+forge create --rpc-url <rpc_https_endpoint> --private-key <your_private_key> src/Counter.sol:Counter --verify --verifier blockscout --verifier-url <blockscout_homepage_explorer_url>/api 
 ```
 
 In the command:
