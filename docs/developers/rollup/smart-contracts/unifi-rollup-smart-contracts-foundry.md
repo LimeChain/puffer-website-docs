@@ -4,6 +4,7 @@ slug: /developers/rollup/smart-contracts/foundry
 ---
 
 ## Prerequisite
+
 Before you begin, ensure you've:
 
 1. [Set up your wallet and have bridged UniFi tokens successfully](../../../unifi-rollup-move-funds.md).
@@ -19,6 +20,7 @@ Before you begin, ensure you've:
    :::
 
 ## Create a Foundry project
+
 To create a Foundry project, run:
 
 ```bash
@@ -34,6 +36,7 @@ cd unifi-smart-contract-tutorial
 ```
 
 ## Deploy a smart contract
+
 :::warning
 Directly pasting your private key into the command line poses security risks. The examples below are instructional and don't adhere to good security practices. To avoid exposing sensitive information such as wallet private keys, use `.env` files to store private data. Create a `.env` file, then add the file to the `.gitignore` file to prevent committing it. Populate the `.env` file with the private information.
 :::
@@ -60,9 +63,11 @@ Transaction hash: 0x734c59643232b61b560da2c750d7ad808267fbc28331ee59102e431ec955
 For more deployment options, see the [forge-create documentation](https://book.getfoundry.sh/reference/forge/forge-create).
 
 ## Verify your smart contract
+
 Optionally, you can verify your contract on the network. This makes the source code publicly available.
 
 ### Deploy and verify a contract in one go
+
 To deploy and verify a contract in a single command, run:
 
 ```bash

@@ -11,6 +11,7 @@ Before you begin, ensure you:
 2. [Set up your Hardhat environment](https://hardhat.org/tutorial/setting-up-the-environment#2.-setting-up-the-environment).
 
 ## Create a Hardhat project
+
 To create an empty Hardhat project:
 
 1. Create your project directory:
@@ -51,6 +52,7 @@ value in the script.
 :::
 
 ## Deploy the contract
+
 The sample project already includes the deployment script. To deploy on UniFi, you'll just need to make
 a few modifications to the `hardhat.config.js` file:
 
@@ -108,9 +110,11 @@ LockModule#Lock - 0xA72022A83654E794B8e9FD7217ADF7378f3e985d
 ```
 
 ## Verify your smart contract
+
 Optionally, you can verify your contract on the network. This makes the source code publicly available.
 
 ### Verify an already existing contract contract
+
 To verify a contract, you need to make a few modifications the project.
 
 1. In your project directory, install `hardhat-verify`
