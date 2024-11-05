@@ -1,18 +1,13 @@
 ---
-title: RPC Endpoints
+title: Network & RPC Endpoints
 slug: /developers/rollup/reference/rpc-endpoints
 ---
 
-## L1 Endpoints
-
-<p>L1 RPC endpoint: {PLACEHOLDER}</p>
-<p>L1 Block explorer: {PLACEHOLDER}</p>
-
-## L2 Endpoints
-
-<p>L2 RPC endpoint: {PLACEHOLDER}</p>
-<p>L2 Block explorer: {PLACEHOLDER}</p>
-
-## UniFi JSON-RPC API
-
-The JSON-RPC fully supports the [Execution API specification](https://ethereum.github.io/execution-apis/api-documentation/).
+| Parameter             | Value                                                 |
+|-----------------------|-------------------------------------------------------|
+| Network Name          | `UniFi Testnet`                                         |
+| Chain ID              | `8787`                                                  |
+| Currency Symbol       | ETH                                                   |
+| Explorer              | [UniFi Testnet Blockscout](http://35.198.154.54/)     |
+| Sequencer URL        | [https://unifi-testnet-rpc-proxy-347169305628.europe-west3.run.app](https://unifi-testnet-rpc-proxy-347169305628.europe-west3.run.app) |
+| Contract Addresses    | [Contract addresses](./contract-addresses.md)         |
