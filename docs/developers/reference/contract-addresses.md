@@ -7,8 +7,8 @@ slug: /developers/rollup/reference/contract-addresses
 
 ### L1 Addresses
 
-| Contract                  | Address                                    |
-| ------------------------- | ------------------------------------------ |
+| Contract                  | Address                                                                                                                       |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | UniFi L1                  | [0x12d30f3584ee969C4131b7d5dCAEe763A378AfD9](https://holesky.etherscan.io/address/0x12d30f3584ee969C4131b7d5dCAEe763A378AfD9) |
 | Rollup Address Manager    | [0x540B8d82e6E11F0a9438fB19f33c85b2B53B49d8](https://holesky.etherscan.io/address/0x540B8d82e6E11F0a9438fB19f33c85b2B53B49d8) |
 | Shared Address Manager    | [0x0F3dD9461Ccf086cC32D38eC8673e541Fc86279d](https://holesky.etherscan.io/address/0x0F3dD9461Ccf086cC32D38eC8673e541Fc86279d) |
@@ -25,9 +25,9 @@ slug: /developers/rollup/reference/contract-addresses
 ### L2 Addresses
 
 | Contract                    | Address                                    |
-| --------------------------- | ------------------------------------------ |
-| UniFi L2                    | [0x9A7fe8e9852c684DD03ce9caEa003F5Fc0a3135b](http://35.207.160.13/address/0x9A7fe8e9852c684DD03ce9caEa003F5Fc0a3135b) |
-| Bridge                      | [0x511a232eaef7aA4633BAc8E406a7886e46492AFC](http://35.207.160.13/address/0x511a232eaef7aA4633BAc8E406a7886e46492AFC) |
-| Signal Service              | [0x80d0AFe646Ba22e5E557F1dCC209e75b07e1b1BA](http://35.207.160.13/address/0x80d0AFe646Ba22e5E557F1dCC209e75b07e1b1BA) |
-| Rollup Address Manager      | [0x91e75542D9da7C52089b71094e327307C51D6deD](http://35.207.160.13/address/0x91e75542D9da7C52089b71094e327307C51D6deD) |
-| Shared Address Manager Impl | [0x6a23ea44177735E3700721817A181375A8afdb47](http://35.207.160.13/address/0x6a23ea44177735E3700721817A181375A8afdb47) |
+|-----------------------------|--------------------------------------------|
+| UniFi L2                    | 0x9A7fe8e9852c684DD03ce9caEa003F5Fc0a3135b |
+| Bridge                      | 0x511a232eaef7aA4633BAc8E406a7886e46492AFC |
+| Signal Service              | 0x80d0AFe646Ba22e5E557F1dCC209e75b07e1b1BA |
+| Rollup Address Manager      | 0x91e75542D9da7C52089b71094e327307C51D6deD |
+| Shared Address Manager Impl | 0x6a23ea44177735E3700721817A181375A8afdb47 |
