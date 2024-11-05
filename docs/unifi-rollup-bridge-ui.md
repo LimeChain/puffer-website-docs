@@ -1,5 +1,5 @@
 ---
-title: How to use the UniFi Bridge
+title: How to use UniFi Bridge
 slug: /unifi-based-rollup-bridge-ui
 ---
 
