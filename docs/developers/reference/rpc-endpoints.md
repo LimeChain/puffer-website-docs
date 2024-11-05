@@ -8,6 +8,6 @@ slug: /developers/rollup/reference/rpc-endpoints
 | Network Name          | `UniFi Testnet`                                         |
 | Chain ID              | `8787`                                                  |
 | Currency Symbol       | ETH                                                   |
-| Explorer              | [UniFi Testnet Blockscout](http://35.198.154.54/)     |
+| Explorer              | [UniFi Testnet Blockscout](http://35.207.160.13/)     |
 | Sequencer URL        | [https://unifi-testnet-rpc-proxy-347169305628.europe-west3.run.app](https://unifi-testnet-rpc-proxy-347169305628.europe-west3.run.app) |
 | Contract Addresses    | [Contract addresses](./contract-addresses.md)         |
