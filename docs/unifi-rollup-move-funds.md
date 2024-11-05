@@ -19,7 +19,7 @@ To connect to the UniFi Helder Testnet, follow these steps:
 1. Open MetaMask and click on the network dropdown.
 2. Select **Add network** → **Add a network manually**.
 3. Enter the following details:
-   - **Network Name**: `UniFiHelder`
+   - **Network Name**: `UniFi Testnet`
    - **New RPC URL**: `{PLACEHOLDER}`
    - **Chain ID**: `16700`
    - **Currency Symbol**: `testETH`

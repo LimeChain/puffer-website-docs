@@ -26,6 +26,13 @@ When bridging ERC20 tokens, you will have an additional transaction to approve t
 8. After a few minutes, the transaction will be confirmed and the status will change to Claimed.
 ![Claimed transaction](/img/rollup/claimed-transaction.png)
 9. Once the transaction is confirmed, you can switch to the L2 network (Taiko) and see your bridged funds in your wallet.
+### Claiming Manually (Optional)
+If you want to claim your bridged funds manually, you can do so by following these steps:
+1. Press the Claim button on the transaction.
+![Claim button](/img/rollup/claim-button.png)
+2. Review the transaction details and press confirm.
+![Claim transaction](/img/rollup/claim-transaction.png)
+3. After transaction confirmation, you will see your bridged funds in your wallet.
 
 ## How to bridge (withdraw) ETH from UniFi
 
