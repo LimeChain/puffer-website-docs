@@ -2,6 +2,7 @@
 title: Deploy a Smart Contract using Hardhat
 slug: /developers/rollup/smart-contracts/hardhat
 ---
+
 ## Prerequisites
 
 Before you begin, ensure you:
@@ -15,35 +16,35 @@ To create an empty Hardhat project:
 
 1. Create your project directory:
 
-    ```bash
-    mkdir unifi-smart-contract-tutorial
-    cd unifi-smart-contract-tutorial
-    ```
-1.  Initialize your Node.js project:
+   ```bash
+   mkdir unifi-smart-contract-tutorial
+   cd unifi-smart-contract-tutorial
+   ```
 
-     ```bash
-    npm init
-    ```
+2. Initialize your Node.js project:
 
-1. Install Hardhat:
+   ```bash
+   npm init
+   ```
 
-     ```bash
-    npm install --save-dev hardhat
-    ```
+3. Install Hardhat:
 
-1. Initialize the Hardhat project:
+   ```bash
+   npm install --save-dev hardhat
+   ```
 
-     ```bash
-    npx hardhat init
-    ```
+4. Initialize the Hardhat project:
 
-    In the menu that appears, select **Create a JavaScript project** and press **Enter**. Accept all
-    the default values in the questionnaire.
+   ```bash
+   npx hardhat init
+   ```
+
+   In the menu that appears, select **Create a JavaScript project** and press **Enter**. Accept all
+   the default values in the questionnaire.
 
 You should now have a sample HardHat project with a `Lock` contract, that locks funds for a set time, and a few smart contract tests.
 
 :::note
-
 
 The default script in `ignition/modules/Lock.js` locks 1 GWEI in the contract upon deployment, you can modify this
 value in the script.
@@ -74,29 +75,30 @@ a few modifications to the `hardhat.config.js` file:
 
 3. Add UniFi to your `hardhat.config.js` file. The following example shows how to add a RPC endpoint to the configuration file.
 
-      ```javascript
-      require("@nomicfoundation/hardhat-toolbox");
-      require("dotenv").config();
-      const { PRIVATE_KEY, RPC_ENDPOINT } = process.env;
+   ```javascript
+   require("@nomicfoundation/hardhat-toolbox");
+   require("dotenv").config();
+   const { PRIVATE_KEY, RPC_ENDPOINT } = process.env;
 
-      module.exports = {
-        solidity: "0.8.27",
-        networks: {
-          unifi_testnet: {
-            url: RPC_ENDPOINT,
-            accounts: [PRIVATE_KEY],
-          },
-        },
-      };
-      ```
+   module.exports = {
+     solidity: "0.8.27",
+     networks: {
+       unifi_testnet: {
+         url: RPC_ENDPOINT,
+         accounts: [PRIVATE_KEY],
+       },
+     },
+   };
+   ```
 
-1. Deploy your contract.
+4. Deploy your contract.
 
-    ```bash
-    npx hardhat ignition deploy ./ignition/modules/Lock.js --network <network_name>
-    ```
+   ```bash
+   npx hardhat ignition deploy ./ignition/modules/Lock.js --network <network_name>
+   ```
 
 In the command:
+
 - `<network_name>` is the name of the network from `hardhat.config.js` you want to deploy on f.e. `unifi_testnet`.
 
 Your output should look something like this:
@@ -108,67 +110,70 @@ LockModule#Lock - 0xA72022A83654E794B8e9FD7217ADF7378f3e985d
 ```
 
 ## Verify your smart contract
+
 Optionally, you can verify your contract on the network. This makes the source code publicly available.
 
 ### Verify an already existing contract contract
+
 To verify a contract, you need to make a few modifications the project.
 
 1. In your project directory, install `hardhat-verify`
-    ```bash
-    npm install --save-dev @nomicfoundation/hardhat-verify
-    ```
+   ```bash
+   npm install --save-dev @nomicfoundation/hardhat-verify
+   ```
 2. Add blockscout url and chain id to the .env file
-    ```
-    BLOCKSCOUT_URL=<blockscout_homepage_explorer_url>
-    CHAIN_ID=<chain_id>
-    ```
+   ```
+   BLOCKSCOUT_URL=<blockscout_homepage_explorer_url>
+   CHAIN_ID=<chain_id>
+   ```
 3. Import `hardhat-verify` in your `hardhat.config.js`:
 
-    ```javascript
-      require("@nomicfoundation/hardhat-verify");
-      require("@nomicfoundation/hardhat-toolbox");
-      require("dotenv").config();
-      const { PRIVATE_KEY, RPC_ENDPOINT, BLOCKSCOUT_URL, CHAIN_ID } = process.env;
+   ```javascript
+   require("@nomicfoundation/hardhat-verify");
+   require("@nomicfoundation/hardhat-toolbox");
+   require("dotenv").config();
+   const { PRIVATE_KEY, RPC_ENDPOINT, BLOCKSCOUT_URL, CHAIN_ID } = process.env;
 
-      module.exports = {
-        solidity: "0.8.27",
-        networks: {
-          unifi_testnet: {
-            url: RPC_ENDPOINT,
-            accounts: [PRIVATE_KEY],
-          },
-        },
-        etherscan: {
-          apiKey: {
-            unifi_testnet: "empty",
-          },
-          customChains: [
-            {
-              network: 'unifi_testnet',
-              chainId: CHAIN_ID,
-              urls: {
-                apiURL: `${BLOCKSCOUT_URL}/api`,
-                browserURL: BLOCKSCOUT_URL,
-              },
-            },
-          ],
-        },
-        sourcify: {
-          enabled: false
-        },  
-      };
-      ```
+   module.exports = {
+     solidity: "0.8.27",
+     networks: {
+       unifi_testnet: {
+         url: RPC_ENDPOINT,
+         accounts: [PRIVATE_KEY],
+       },
+     },
+     etherscan: {
+       apiKey: {
+         unifi_testnet: "empty",
+       },
+       customChains: [
+         {
+           network: "unifi_testnet",
+           chainId: CHAIN_ID,
+           urls: {
+             apiURL: `${BLOCKSCOUT_URL}/api`,
+             browserURL: BLOCKSCOUT_URL,
+           },
+         },
+       ],
+     },
+     sourcify: {
+       enabled: false,
+     },
+   };
+   ```
 
-3. Execute the `hardhat verify` command:
+4. Execute the `hardhat verify` command:
 
-    ```bash
-    npx hardhat verify --network <network_name> <contract_address> "constructor_argument_1" "constructor_argument_2" ...
-    ```
-    In our example, the full command should look something like this:
+   ```bash
+   npx hardhat verify --network <network_name> <contract_address> "constructor_argument_1" "constructor_argument_2" ...
+   ```
 
-    ```bash
-    npx hardhat verify --network unifi_testnet 0x545D79cAace91bB8A710Ad2ee4e50B01d87bB6Ff 123456
-    ```
+   In our example, the full command should look something like this:
+
+   ```bash
+   npx hardhat verify --network unifi_testnet 0x545D79cAace91bB8A710Ad2ee4e50B01d87bB6Ff 123456
+   ```
 
 In the command:
 
@@ -177,4 +182,3 @@ In the command:
 - `constructor_argument_1`, `constructor_argument_2`, etc., are the arguments passed to your contract's constructor (if any).
 
 For more contract verification options, refer to the [Hardhat verification documentation](https://hardhat.org/plugins/nomiclabs-hardhat-etherscan.html).
-
