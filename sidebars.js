@@ -111,7 +111,7 @@ const sidebars = {
           items: [
             {
               type: "doc",
-              label: "RPC Endpoints",
+              label: "Network & RPC Endpoints",
               id: "developers/reference/rpc-endpoints",
             },
             {
