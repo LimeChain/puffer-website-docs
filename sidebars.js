@@ -50,10 +50,9 @@ const sidebars = {
       items: ["deployed-contracts", "multisig"],
     },
     {
-      // how to bridge and fund wallet etc
       type: "category",
       label: "UniFi Based Rollup",
-      items: ["unifi-rollup-intro", "unifi-rollup-bridge"],
+      items: ["unifi-rollup-intro", "unifi-rollup-move-funds", "unifi-rollup-bridge-ui"],
     },
     {
       type: "category",

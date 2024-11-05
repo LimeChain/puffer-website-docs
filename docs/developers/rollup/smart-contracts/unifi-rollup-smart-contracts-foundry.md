@@ -6,7 +6,7 @@ slug: /developers/rollup/smart-contracts/foundry
 
 Before you begin, ensure you've:
 
-1. [Set up your wallet and have bridged UniFi tokens successfully](../../../unifi-rollup-bridge.md).
+1. [Set up your wallet and have bridged UniFi tokens successfully](../../../unifi-rollup-move-funds.md).
 2. Downloaded and installed Foundry:
 
     ```bash
