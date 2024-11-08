@@ -9,7 +9,7 @@ In order to use the UniFi Rollup Bridge, you need to have a compatible wallet an
 
 ## How to bridge (deposit) ETH to UniFi
 
-1. Open the UniFi Rollup Bridge UI(TODO: link).
+1. Open the [UniFi Rollup Bridge UI](https://bridge-ui-alpha.vercel.app/).
 2. Connect your preffered wallet.
    ![Connecting the wallet](/img/rollup/connect-wallet.png)
 3. Switch your connected network to L1 (Holesky).
