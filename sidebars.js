@@ -50,9 +50,9 @@ const sidebars = {
       items: ["deployed-contracts", "multisig"],
     },
     {
-      type: "category",
+      type: "link",
       label: "UniFi Based Rollup",
-      items: ["unifi-rollup-intro"],
+      href: "https://docs-unifi.puffer.fi/",
     },
     {
       type: "category",
